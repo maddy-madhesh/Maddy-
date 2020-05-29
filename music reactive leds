@@ -1,0 +1,33 @@
+//MATRIXON ELECTRONIOCS
+int mic = A1;
+int r = 11 ;
+int g =10 ;
+int b = 9 ;
+#define delayleds micvalue * 5000
+void setup() {
+  pinMode(mic,INPUT);
+  pinMode(r ,OUTPUT);
+  pinMode(g ,OUTPUT);
+  pinMode(b ,OUTPUT);
+  }
+void loop() {
+int micvalue  = digitalRead(mic);
+ 
+ if (micvalue == 1){
+  digitalWrite( r  ,HIGH);
+  } else {
+  digitalWrite( r ,LOW);}
+  delay(micvalue);
+   if (micvalue == 1){
+  digitalWrite( g  ,HIGH); 
+  } else {
+    digitalWrite( g  ,LOW);
+    delay(micvalue);
+  }
+  if (micvalue == 1){
+  digitalWrite( b ,HIGH);
+  } else {
+  digitalWrite( b ,LOW);
+  delay(micvalue);
+ }}
+ //code by maddy 
